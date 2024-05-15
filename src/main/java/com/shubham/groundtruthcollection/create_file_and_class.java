@@ -18,6 +18,10 @@ public class create_file_and_class extends AppCompatActivity {
     String fileName = null;
     ArrayList<String> listToSend;
 
+    boolean isFileCreated = false;
+    boolean isClassCreated = false;
+
+
 
 
 
@@ -28,21 +32,49 @@ public class create_file_and_class extends AppCompatActivity {
 
         doneButton = findViewById(R.id.doneButton);
 
+        doneButton.setEnabled(false);
+
         listToSend = new ArrayList<>();
 
         Button createFileButton = findViewById(R.id.createFileButton);
+
+
+
+
+        Button createClassButton = findViewById(R.id.createClassButton);
+
+        //disable create class button until file is created
+        createClassButton.setEnabled(false);
+
         createFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showCreateFileDialog();
+
+                createClassButton.setEnabled(true);
+
+
             }
         });
 
-        Button createClassButton = findViewById(R.id.createClassButton);
+
+//        if(isFileCreated){
+//            createClassButton.setEnabled(true);
+//        }
+
+//        if(isClassCreated){
+//            doneButton.setEnabled(true);
+//        }
+
+
+
+        //done button is enabled only when file and class are created
+
         createClassButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showCreateClassDialog();
+                doneButton.setEnabled(true);
             }
         });
 
@@ -98,6 +130,8 @@ public class create_file_and_class extends AppCompatActivity {
                     listToSend.add(className);
                     Toast.makeText(create_file_and_class.this, "Class Name: " + className, Toast.LENGTH_SHORT).show();
 
+                    isClassCreated = true;
+
 
 
 
@@ -139,6 +173,7 @@ public class create_file_and_class extends AppCompatActivity {
                     intent.putExtra("file_name", fileName);
                     setResult(RESULT_OK, intent);
                     dialog.dismiss();
+                    isFileCreated = true;
                 } else {
                     Toast.makeText(create_file_and_class.this, "Please enter a file name", Toast.LENGTH_SHORT).show();
                 }
