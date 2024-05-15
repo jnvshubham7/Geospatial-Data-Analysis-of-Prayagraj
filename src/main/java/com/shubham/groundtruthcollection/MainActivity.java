@@ -26,6 +26,7 @@ import com.shubham.groundtruthcollection.R;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,18 +36,31 @@ public class MainActivity extends AppCompatActivity {
     private LocationManager locationManager;
     String fileName = null;
 
+    ArrayList<String> list_received ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         classSpinner = findViewById(R.id.classSpinner);
         saveLocationButton = findViewById(R.id.saveLocationButton);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.class_names, android.R.layout.simple_spinner_item);
+        list_received = getIntent().getStringArrayListExtra("class_names");
+        fileName = getIntent().getStringExtra("file_name");
+        Toast.makeText(this, "File Name: " + fileName, Toast.LENGTH_SHORT).show();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list_received);
+
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         classSpinner.setAdapter(adapter);
+
+
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//                R.array.class_names, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        classSpinner.setAdapter(adapter);
 
         saveLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,9 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //recieve intent file name
-         fileName = getIntent().getStringExtra("file_name");
-        Toast.makeText(this, "File Name: " + fileName, Toast.LENGTH_SHORT).show();
+
 
 
 
