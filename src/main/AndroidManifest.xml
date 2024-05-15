@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,19 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GroundTruthCollection"
-        tools:targetApi="31" >
-
-
-
-
-
+        tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-
-            android:theme="@style/Theme.GroundTruthCollection"
-            android:launchMode="singleTask"
-
-            android:windowSoftInputMode="adjustResize"
+            android:name=".create_file_and_class"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,8 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.GroundTruthCollection"
+            android:windowSoftInputMode="adjustResize">
 
-
+        </activity>
     </application>
 
 </manifest>

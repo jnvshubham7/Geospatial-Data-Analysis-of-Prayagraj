@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner classSpinner;
     private Button saveLocationButton;
     private LocationManager locationManager;
+    String fileName = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
                 saveLocation();
             }
         });
+
+
+        //recieve intent file name
+         fileName = getIntent().getStringExtra("file_name");
+        Toast.makeText(this, "File Name: " + fileName, Toast.LENGTH_SHORT).show();
+
+
 
         // Initialize location manager
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -111,14 +119,14 @@ public class MainActivity extends AppCompatActivity {
 
         File documentsDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
 
-        File file = new File(documentsDirectory, "example.txt");
+        File file = new File(documentsDirectory, fileName + ".csv");
 
 // Check if Documents directory exists
         if (documentsDirectory.exists() || documentsDirectory.mkdirs()) {
             Toast.makeText(this, "Documents directory exists", Toast.LENGTH_SHORT).show();
 
             // Create the file inside the Documents directory
-             file = new File(documentsDirectory, "example.csv");
+             file = new File(documentsDirectory, fileName + ".csv");
             try {
                 if (file.createNewFile()) {
                     // File created successfully
