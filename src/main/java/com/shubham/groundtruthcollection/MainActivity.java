@@ -18,10 +18,17 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.core.Camera;
+import androidx.camera.core.CameraSelector;
+import androidx.camera.core.Preview;
+import androidx.camera.lifecycle.ProcessCameraProvider;
+import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.common.util.concurrent.ListenableFuture;
 import com.shubham.groundtruthcollection.R;
 
 import java.io.File;
@@ -29,6 +36,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,8 +46,13 @@ public class MainActivity extends AppCompatActivity {
     String fileName = null;
 
     Button seelistButton;
+    private ProcessCameraProvider cameraProvider;
 
     ArrayList<String> list_received ;
+
+//    private PreviewView viewFinder;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         seelistButton = findViewById(R.id.seeListButton);
+//        viewFinder = findViewById(R.id.previewView); // Initialize the viewFinder
 
 
 
@@ -62,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         classSpinner.setAdapter(adapter);
+
+
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 2);
+//        } else {
+//            startCamera();
+//        }
 
 
 
@@ -231,6 +252,47 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Error saving location", Toast.LENGTH_SHORT).show();
         }
     }
+//
+//
+//
+//    private void startCamera() {
+//        ListenableFuture<ProcessCameraProvider> cameraProviderFuture = ProcessCameraProvider.getInstance(this);
+//        cameraProviderFuture.addListener(() -> {
+//            try {
+//                cameraProvider = cameraProviderFuture.get();
+//                if (cameraProvider != null) {
+//                    bindPreview(cameraProvider);
+//                } else {
+//                    Log.e("Camera", "Failed to initialize camera provider");
+//                }
+//            } catch (ExecutionException | InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }, ContextCompat.getMainExecutor(this));
+//    }
+//
+//    private void bindPreview(@NonNull ProcessCameraProvider cameraProvider) {
+//        Preview preview = new Preview.Builder().build();
+//
+//        CameraSelector cameraSelector = new CameraSelector.Builder()
+//                .requireLensFacing(CameraSelector.LENS_FACING_BACK)
+//                .build();
+//
+//        preview.setSurfaceProvider(viewFinder.getSurfaceProvider());
+//
+//        Camera camera = cameraProvider.bindToLifecycle(this, cameraSelector, preview);
+//    }
+//
+//
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        if (requestCode == 2 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//            startCamera();
+//        } else {
+//            Toast.makeText(this, "Camera permission denied", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 
 
 

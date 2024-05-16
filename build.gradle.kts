@@ -36,6 +36,19 @@ android {
 
 dependencies {
 
+    // CameraX core library
+    implementation (libs.camera.core)
+
+// CameraX camera2 implementation
+    implementation (libs.camera.camera2)
+
+// CameraX lifecycle library
+    implementation (libs.camera.lifecycle)
+
+// CameraX view implementation
+    implementation (libs.camera.view)
+
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

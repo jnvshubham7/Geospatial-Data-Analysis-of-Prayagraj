@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_marginTop="30dp"
     android:padding="16dp"
     android:background="@android:color/white">
 
@@ -24,25 +26,40 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp" />
 
+    <!-- TextureView for Camera Preview -->
+    <TextureView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to Capture Image -->
+    <Button
+        android:id="@+id/captureImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
     <!-- Separate LinearLayout for "See List" button -->
     <LinearLayout
-        android:layout_marginBottom="400dp"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/seeListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="See List"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/seeListButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_gravity="center"
-
-        android:background="@drawable/button_background"
-        android:text="See List"
-        android:textColor="@android:color/white" />
 
 </LinearLayout>
