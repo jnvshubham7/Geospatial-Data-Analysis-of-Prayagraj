@@ -16,23 +16,25 @@
 
         <TextView
             android:id="@+id/srNoHeaderTextView"
-            android:layout_width="0dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+
             android:text="Sr. No."
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:gravity="center"/>
+            />
 
         <TextView
             android:id="@+id/longitudeHeaderTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:text="Longitude"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:gravity="center"/>
+
+            />
 
         <TextView
             android:id="@+id/latitudeHeaderTextView"
@@ -42,7 +44,7 @@
             android:text="Latitude"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:gravity="center"/>
+            />
 
         <TextView
             android:id="@+id/classNameHeaderTextView"
@@ -52,7 +54,7 @@
             android:text="Class Name"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:gravity="center"/>
+           />
 
     </LinearLayout>
 
