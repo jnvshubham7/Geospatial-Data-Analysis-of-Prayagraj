@@ -3,35 +3,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/background_color">
 
     <Button
         android:id="@+id/createFileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create New File"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="200dp"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/button_background"/>
 
     <Button
         android:id="@+id/createClassButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create New Class"
-        android:layout_marginBottom="16dp"
-
-
-
-
-
-        />
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/button_background"/>
 
     <Button
         android:id="@+id/doneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Done"
-       android:layout_marginBottom="16dp"
 
-        />
+        android:layout_marginBottom="140dp"
+
+
+
+
+        android:background="@drawable/button_background"
+        android:text="Done"
+        android:textColor="@color/button_text_color" />
 
 </LinearLayout>

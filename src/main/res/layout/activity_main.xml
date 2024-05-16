@@ -3,28 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@android:color/white">
 
     <Spinner
         android:id="@+id/classSpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-
-        />
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_background"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/saveLocationButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Location" />
+        android:text="Save Location"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
 
+    <!-- Separate LinearLayout for "See List" button -->
+    <LinearLayout
+        android:layout_marginBottom="400dp"
+        android:layout_width="match_parent"
 
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/seeListButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See List" />
+
+        android:layout_gravity="center"
+
+        android:background="@drawable/button_background"
+        android:text="See List"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
