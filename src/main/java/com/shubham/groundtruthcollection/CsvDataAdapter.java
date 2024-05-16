@@ -1,4 +1,5 @@
 package com.shubham.groundtruthcollection;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +27,11 @@ public class CsvDataAdapter extends RecyclerView.Adapter<CsvDataAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String data = dataList.get(position);
-        holder.textViewItem.setText(data);
+        String[] rowData = dataList.get(position).split(",");
+        holder.srNoTextView.setText(String.valueOf(position + 1));
+        holder.latitudeTextView.setText(rowData[0]);
+        holder.longitudeTextView.setText(rowData[1]);
+        holder.classNameTextView.setText(rowData[2]);
     }
 
     @Override
@@ -36,11 +40,14 @@ public class CsvDataAdapter extends RecyclerView.Adapter<CsvDataAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView textViewItem;
+        TextView srNoTextView, latitudeTextView, longitudeTextView, classNameTextView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewItem = itemView.findViewById(R.id.textViewItem);
+            srNoTextView = itemView.findViewById(R.id.srNoTextView);
+            latitudeTextView = itemView.findViewById(R.id.latitudeTextView);
+            longitudeTextView = itemView.findViewById(R.id.longitudeTextView);
+            classNameTextView = itemView.findViewById(R.id.classNameTextView);
         }
     }
 }
