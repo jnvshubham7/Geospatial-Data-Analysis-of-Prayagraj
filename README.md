@@ -27,13 +27,18 @@ The methodology employed in this analysis involved several key steps:
 
 ## Images
 
-##Android App Screenshot
-![Screenshot_2024-05-21-01-32-42-60_4a2b3869c1d56533eaaf645b66059dc5](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/8eee553b-cbfd-4705-8204-aa830d83e7eb)
-![Screenshot_2024-05-21-01-34-03-40_4a2b3869c1d56533eaaf645b66059dc5](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/fdefb923-982c-4785-844b-3247fcaa06cc)
-![Screenshot_2024-05-21-01-34-18-56_4a2b3869c1d56533eaaf645b66059dc5](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/5811e87c-0753-408d-9d14-133261d9c061)
-![Screenshot_2024-05-21-01-34-43-56_4a2b3869c1d56533eaaf645b66059dc5](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/4cc889da-7832-4d28-b508-fbcdd401e111)
-![Screenshot_2024-05-21-01-35-04-58_4a2b3869c1d56533eaaf645b66059dc5](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/b0351d07-fc0d-4b11-bd6f-674dc571d7a2)
-![Screenshot_2024-05-21-01-36-49-54_55bef12f624c2b805189a6aa783c400d](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/92e50e5b-d5eb-48d2-bdfe-f3bf33935ae9)
+## Android App Screenshot
+
+<p float="left">
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/8eee553b-cbfd-4705-8204-aa830d83e7eb" width="400" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/fdefb923-982c-4785-844b-3247fcaa06cc" width="400" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/5811e87c-0753-408d-9d14-133261d9c061" width="400" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/4cc889da-7832-4d28-b508-fbcdd401e111" width="400" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/b0351d07-fc0d-4b11-bd6f-674dc571d7a2" width="400" />
+      <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/cc455ee7-4dc3-4af7-9027-3a3c80610aa7" width="400" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/92e50e5b-d5eb-48d2-bdfe-f3bf33935ae9" width="400" />
+
+</p>
 
 
 
@@ -43,6 +48,7 @@ The methodology employed in this analysis involved several key steps:
 ### Trend in Previous Year Data
 
 ![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/baf399a9-faaa-4f5d-a30c-3586882522af)
+
 
 
 
