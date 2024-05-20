@@ -82,9 +82,10 @@ The methodology employed in this analysis involved several key steps:
 
 
 #### 2023
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/128cd0fd-a977-4fc8-9bd4-be8538d4706d)
 
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/205df454-09c1-463f-b9d2-89544a40d1b6)
+
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/128cd0fd-a977-4fc8-9bd4-be8538d4706d" width="550" />
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/205df454-09c1-463f-b9d2-89544a40d1b6" width="500" />
 
 
 
