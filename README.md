@@ -29,20 +29,25 @@ The methodology employed in this analysis involved several key steps:
 
 ### Trend in Previous Year Data
 
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/4df5cea3-390c-494d-aac5-3e2ec7b526ca)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/baf399a9-faaa-4f5d-a30c-3586882522af)
+
 
 
 ### Results and Analysis Screenshots of Different Years
 
 #### 2020
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/a30200a1-7553-4cfd-974a-8ce224afe343)
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/6cdead1f-f161-477a-8d5b-cd52b55b7879)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/62856f7c-a127-4d22-80e2-7ae5f8384c0a)
+
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/0ec65a80-ae57-44aa-8b2e-73f51abeaa26)
+
 
 
 
 #### 2021
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/5ac7efd3-3d2a-48fd-9e73-f28acea09102)
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/99c79ea4-14b8-4939-af8d-571cf1cdb9c4)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/2d75b68c-aac1-45cb-a71a-468285d0636d)
+
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/d8b47013-f661-466b-b3bf-bf28881d5495)
+
 
 
 
@@ -50,20 +55,26 @@ The methodology employed in this analysis involved several key steps:
 
 
 #### 2022
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/3642235b-a8b8-4ed9-ad63-922774230bf9)
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/e6a9ab9d-510b-4709-8224-3d0c05e5c4b0)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/faa0e701-4e30-4be9-ad92-a0def2e68c18)
+
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/900ec12a-ef4c-4037-ab6f-3522e0fa81e7)
+
 
 
 
 #### 2023
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/c211dcb3-e020-42aa-803d-2b623ec79b06)
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/48e50983-7584-427a-a107-8f036ed50f03)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/128cd0fd-a977-4fc8-9bd4-be8538d4706d)
+
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/205df454-09c1-463f-b9d2-89544a40d1b6)
+
 
 
 
 #### 2024
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/214738bd-bbc6-4515-9aa4-8831fb05cda9)
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/401dd759-5e9c-4741-b47f-2e021317c4fe)
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/a65d6343-1904-4b5d-aa94-244cff9705a0)
+
+![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/f608740d-de2c-4abd-afe8-73139e118488)
+
 
 
 
