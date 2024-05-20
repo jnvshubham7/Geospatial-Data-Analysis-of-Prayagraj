@@ -81,13 +81,34 @@ The methodology employed in this analysis involved several key steps:
 ## Repository Structure
 
 ```
-|- data/                    # Placeholder for raw and processed data
-|- documentation/           # Documentation related to the project methodology and results
-   |- methodology.pdf       # Detailed methodology document
-   |- results_summary.pdf   # Summary of the classification results
-|- scripts/                 # Scripts used for image processing and classification
-|- LICENSE                  # License information for the repository
-|- README.md                # Overview and usage instructions (this file)
+Android-App-Code-Repository/
+│
+├── Android-App-Code/
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── java/              # Java code for the Android application
+│   │   │   │   │   └── com/
+│   │   │   │   │       └── shubham/
+│   │   │   │   │           └── groundtruthcollection/
+│   │   │   │   │               └── ...
+│   │   │   │   ├── res/               # Android app resources (layouts, strings, etc.)
+│   │   │   │   └── AndroidManifest.xml # Android app manifest file
+│   │   │   └── test/                  # Test code for the Android app
+│   │   └── build.gradle               # Gradle build configuration for the Android app
+│   │
+│   └── README.md
+│
+├── ppt/
+│   ├── PPT.pdf                   # PDF version of the PowerPoint presentation
+│   └── PPT.pptx                  # Original PowerPoint presentation file
+│
+├── report/
+│   ├── Report.docx               # Original document file of the report
+│   └── Report.pdf                # PDF version of the report
+│
+└── README.md
+
 ```
 
 ## Usage
