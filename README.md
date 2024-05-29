@@ -47,7 +47,9 @@ The methodology employed in this analysis involved several key steps:
 
 ### Trend in Previous Year Data
 
-![image](https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/baf399a9-faaa-4f5d-a30c-3586882522af)
+<p float="left">
+  <img src="https://github.com/jnvshubham7/Geospatial-Data-Analysis-of-Prayagraj/assets/69629803/baf399a9-faaa-4f5d-a30c-3586882522af" width="600" height="400" />
+
 
 
 
